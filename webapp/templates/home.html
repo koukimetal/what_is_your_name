@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% if yourname %}
+        Hello {{yourname}}
+        {% else %}
+        What is your name
+        {% endif %}
+    </title>
+</head>
+<body>
+    <form method="get">
+        <h1>
+            {% if yourname %}
+            Hello {{yourname}}
+            {% else %}
+            What is your name
+            {% endif %}
+        </h1>
+
+        <label for="yourname_id">Your Name</label>
+        <input id="yourname_id" name="yourname" type="text">
+        <input type="submit" value="answer">
+    </form>
+</body>
+</html>
